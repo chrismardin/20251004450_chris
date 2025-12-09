@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="css/stylos.css">
+</head>
+
+<body>
+
+
+    <header>
+        <h2>Gestor de Tareas</h2>
+        <nav>
+
+            <a href="#">Tareas</a>
+            <a style="font-weight: bold;" href="#">Nueva tarea</a>
+            <a href="#">Busqueda</a>
+            <a href="#">Cerrar Seccion</a>
+
+
+        </nav>
+
+    </header>
+
+    <main>
+
+
+
+
+        <section>
+            <h1>Nueva Tareas</h1>
+            <form>
+                <label for="titulo">Codigo de Tarea:</label> <br>
+                <input type="number" id="titulo" name="titulo" required> <br>
+
+                <label for="nombre">Nombre de la tarea</label> <br>
+                <input type="text" id="nombre" name="nombre" required> <br>
+
+                <label for="descripcion">Descripcion de la tarea:</label> <br>
+                <textarea id="descripcion" name="descripcion" required></textarea> <br>
+
+                <label for="nivel">Nivel de Prioridad:</label> <br>
+                <select id="nivel" name="nivel" required>
+
+                    <option value="">Bajo</option>
+                    <option value="medio">Medio</option>
+                    <option value="alto">Alto</option>
+                </select>
+
+
+
+
+
+
+                <label for="estado">Estado:</label> <br>
+                <select id="estado" name="estado" required>
+
+                    <option value="">Pendiente</option>
+                    <option value="progreso">En Progreso</option>
+                    <option value="completado">Completado</option>
+
+                </select> <br>
+                <label for="fecha">Fecha de Vencimiento</label> <br>
+                <input type="date" id="fecha"> <br>
+
+                <button>Registrar Tarea</button>
+
+
+
+
+
+
+            </form>
+
+        </section>
+    </main>
+
+
+</body>
+
+</html>
